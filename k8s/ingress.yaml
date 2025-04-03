@@ -10,8 +10,8 @@ metadata:
 spec:
   tls:
   - hosts:
-    - eshop.aimbis.com
-    secretName: apphost-tls
+    - "*.aimbis.com"
+    secretName: wildcard-aimbis-tls
   rules:
   - host: eshop.aimbis.com
     http:
