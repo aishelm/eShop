@@ -50,24 +50,24 @@ COPY ["src/Webhooks.API/Webhooks.API.csproj", "/src/Webhooks.API/"]
 
 # Restore NuGet packages for all projects
 # This ensures all project dependencies are available
-RUN dotnet restore "/src/Basket.API/Basket.API.csproj"
-RUN dotnet restore "/src/Catalog.API/Catalog.API.csproj"
-RUN dotnet restore "/src/eShop.AppHost/eShop.AppHost.csproj"
-RUN dotnet restore "/src/eShop.ServiceDefaults/eShop.ServiceDefaults.csproj"
-RUN dotnet restore "/src/EventBus/EventBus.csproj"
-RUN dotnet restore "/src/EventBusRabbitMQ/EventBusRabbitMQ.csproj"
-RUN dotnet restore "/src/Identity.API/Identity.API.csproj"
-RUN dotnet restore "/src/IntegrationEventLogEF/IntegrationEventLogEF.csproj"
-RUN dotnet restore "/src/Mobile.Bff.Shopping/Mobile.Bff.Shopping.csproj"
-RUN dotnet restore "/src/Ordering.API/Ordering.API.csproj"
-RUN dotnet restore "/src/Ordering.Domain/Ordering.Domain.csproj"
-RUN dotnet restore "/src/Ordering.Infrastructure/Ordering.Infrastructure.csproj"
-RUN dotnet restore "/src/OrderProcessor/OrderProcessor.csproj"
-RUN dotnet restore "/src/PaymentProcessor/PaymentProcessor.csproj"
-RUN dotnet restore "/src/WebApp/WebApp.csproj"
-RUN dotnet restore "/src/WebAppComponents/WebAppComponents.csproj"
-RUN dotnet restore "/src/WebhookClient/WebhookClient.csproj"
-RUN dotnet restore "/src/Webhooks.API/Webhooks.API.csproj"
+RUN dotnet restore "/src/Basket.API/Basket.API.csproj" \
+    && dotnet restore "/src/Catalog.API/Catalog.API.csproj" \
+    && dotnet restore "/src/eShop.AppHost/eShop.AppHost.csproj" \
+    && dotnet restore "/src/eShop.ServiceDefaults/eShop.ServiceDefaults.csproj" \
+    && dotnet restore "/src/EventBus/EventBus.csproj" \
+    && dotnet restore "/src/EventBusRabbitMQ/EventBusRabbitMQ.csproj" \
+    && dotnet restore "/src/Identity.API/Identity.API.csproj" \
+    && dotnet restore "/src/IntegrationEventLogEF/IntegrationEventLogEF.csproj" \
+    && dotnet restore "/src/Mobile.Bff.Shopping/Mobile.Bff.Shopping.csproj" \
+    && dotnet restore "/src/Ordering.API/Ordering.API.csproj" \
+    && dotnet restore "/src/Ordering.Domain/Ordering.Domain.csproj" \
+    && dotnet restore "/src/Ordering.Infrastructure/Ordering.Infrastructure.csproj" \
+    && dotnet restore "/src/OrderProcessor/OrderProcessor.csproj" \
+    && dotnet restore "/src/PaymentProcessor/PaymentProcessor.csproj" \
+    && dotnet restore "/src/WebApp/WebApp.csproj" \
+    && dotnet restore "/src/WebAppComponents/WebAppComponents.csproj" \
+    && dotnet restore "/src/WebhookClient/WebhookClient.csproj" \
+    && dotnet restore "/src/Webhooks.API/Webhooks.API.csproj"
 #RUN dotnet restore "/src/ClientApp/ClientApp.csproj"
 #RUN dotnet restore "/src/HybridApp/HybridApp.csproj"
 
