@@ -1,0 +1,22 @@
+# Development files
+.git
+.gitignore
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build outputs
+**/bin/
+**/obj/
+**/publish/
+
+# Node modules
+**/node_modules/
+
+# Docker files
+Dockerfile*
+docker-compose*
+.docker/ 
